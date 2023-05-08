@@ -8,17 +8,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="파일이름.css">
         <h1 style="text-align:center">About Me</h1>
+        <style>
+            .multi {
+                column-count: 2;
+                column-gap: 20px;
+            }
+            .multi h3 {
+                break-before: column;
+            }
+        </style>
     </head>
  
     <body>
         <h4 style="text-align:center">이서현의 자기소개 페이지입니다.</h4>
         <br>
         
-        <h4 style="display:inline">이름</h4>: 이서현<br>
-        <h4 style="display:inline">학번</h4>: 32213160<br>
-        <h4 style="display:inline">학과</h4>: 소프트웨어학과<br>
-        <br>
-
-        <img src="https://user-images.githubusercontent.com/131675833/236806190-7e9e91dd-cb55-4c3d-8abb-52c73e77536e.jpg" alt="My Image" style="width:25%; height:35%">
+        <div class="multi">
+            <h3>Who I am?</h3>
+            <h4 style="display:inline">이름</h4>: 이서현<br>
+            <h4 style="display:inline">학번</h4>: 32213160<br>
+            <h4 style="display:inline">학과</h4>: 소프트웨어학과<br>        
+            <br><br>
+            <img src="https://user-images.githubusercontent.com/131675833/236806190-7e9e91dd-cb55-4c3d-8abb-52c73e77536e.jpg" alt="My Image" style="width:150px; height:200px">
+            
+            <h3>I like...</h3>
+            <h4 style="display:inline">직업</h4>: 인공지능 보안 엔지니어<br>
+            <h4 style="display:inline">취미</h4>: 피겨 스케이팅, 피아노 연주<br>
+            <h4 style="display:inline">동물</h4>: 강아지<br>
+        </div>
     </body>
 </html>
